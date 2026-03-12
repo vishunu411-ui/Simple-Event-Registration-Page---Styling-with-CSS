@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Workshop on Web Development</h1>
+        <p>Join us for an intensive 2-day workshop to master Front-End technologies.</p>
+    </header>
+
+    <section class="event-info">
+        <h3>Event Details</h3>
+        <table>
+            <tr><td><strong>Date:</strong></td><td>March 25, 2026</td></tr>
+            <tr><td><strong>Time:</strong></td><td>10:00 AM - 4:00 PM</td></tr>
+            <tr><td><strong>Venue:</strong></td><td>Main Auditorium, Block A</td></tr>
+            <tr><td><strong>Organizer:</strong></td><td>AdrolT Technologies</td></tr>
+        </table>
+    </section>
+
+    <div class="form-container">
+        <form>
+            <fieldset>
+                <legend>Participant Information</legend>
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="dept">Department:</label>
+                <select id="dept" name="dept">
+                    <option value="cse">CSE</option>
+                    <option value="it">IT</option>
+                    <option value="ece">ECE</option>
+                </select>
+
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+
+                <label for="comments">Why do you want to join?</label>
+                <textarea id="comments" rows="4"></textarea>
+
+                <div class="declaration">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">I declare that the information provided is true.</label>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <section class="table-section">
+        <h3>Recent Registered Participants</h3>
+        <table class="participants-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Arun Kumar</td><td>CSE</td><td>Confirmed</td></tr>
+                <tr><td>Priya Dharshini</td><td>IT</td><td>Pending</td></tr>
+                <tr><td>Sanjay Ram</td><td>ECE</td><td>Confirmed</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Contact Email: helpdesk@adroit.com | Phone: +91 9876543210</p>
+        <p>&copy; 2026 AdrolT Technologies. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
